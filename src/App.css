@@ -64,6 +64,8 @@ h1 {
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   padding: 1.5rem;
+  width: 30%;
+  margin: 0 auto;
 }
 
 .task-form label {
@@ -104,6 +106,7 @@ h1 {
 
 .task-form .form-buttons button {
   flex: 1;
+  margin-right: 4px; 
 }
 
 .task-form .form-buttons button[type="button"] {
@@ -156,6 +159,22 @@ h1 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1rem;
+  padding: 1rem; 
+}
+
+.task-list-wrapper {
+  height: 78vh; 
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: auto;
+  padding: 0.5rem; 
+  box-sizing: border-box;
+  background-color: var(--color-white);
+}
+
+.loading-spinner {
+  text-align: center;
+  padding: 1rem;
 }
 
 .btn-update {
@@ -221,6 +240,21 @@ input[type="checkbox"] {
   margin-left: 15px;
   transform: scale(1.2);
   cursor: pointer;
+}
+
+.no-tasks-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-muted);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
